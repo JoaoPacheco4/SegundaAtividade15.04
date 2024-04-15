@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    $id = prompt("Qual a sua idade?")
+    document.write("<font color='red' size='7'><center>")
+    document.write("Idade e Status")
+
+    if ($id < 13) {
+        $est = "criança"
+    }
+    else {
+        if ($id < 21) {
+            $est = "jovem"
+        }
+        else {
+            if ($id < 60) {
+                $est = "adulto"
+            }
+            else {
+                $est = "idoso"
+            }
+        }
+    }
+    document.write("<font color='blue' size='6'><center>")
+    document.write("<table border='1' width-='400'>")
+    document.write("<tr>")
+    document.write("<td width='100' width='50'> Idade </td>")
+    document.write("<td width='100' width='50'> Status</td>")
+    document.write("<td width='100' width='50'> Imagem</td>")
+    document.write("</tr>")
+    document.write("<font color='#836FFF' size='4'>")
+    document.write("<tr>")
+    document.write("<td width='100' width='50'><font color='#836FFF' size='5'>", $id, "</td>")
+    document.write("<td width='100' width='50'><font color='#836FFF' size='5'>", $est, "</td>")
+    document.write("<td width='100' width='50'><font color='#836FFF' size='5'>")
+        if ($id < 13) {
+            document.write("<img src='Img/crianças.jpg' width='100%'></td>")
+    }
+    else {
+        if ($id < 21) {
+            document.write("<img src='Img/jovens.jpg' width='100%'></td>")
+        }
+        else {
+            if ($id < 60) {
+                document.write("<img src='Img/adultos.jpg' width='100%'></td>")
+            }
+            else {
+                document.write("<img src='Img/idosos.jpg' width='100%'></td>")
+            }
+        }
+    }
+    document.write("</tr>")
+</script>
+
+<body>
+</body>
+</html>
